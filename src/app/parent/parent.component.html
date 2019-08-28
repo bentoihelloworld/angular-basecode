@@ -1,0 +1,11 @@
+
+<div>
+<h2>Parent Component</h2>
+<p>Sender: {{response?.name}}</p>
+<p>Message: {{response?.message}}</p>
+<button (click)="sendMessage()">Send Message</button>
+
+</div>
+
+<app-child [mssg]="message" [sender]="parentName" (send)="onReply($event)"></app-child>
+

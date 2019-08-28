@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'beacon-app';
+  
+  isActive: boolean;
+  
+  onHide(){
+      this.isActive = false;
+  }
+  
+  onShow(){
+      this.isActive= true;
+  }
 }
